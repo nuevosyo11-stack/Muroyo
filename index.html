@@ -1,211 +1,202 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mira el video</title>
-  <meta name="description" content="Mira el video completo aquí.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Facebook / Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mira el video">
-  <meta property="og:description" content="Mira el video completo aquí.">
-  <meta property="og:url" content="https://videocomplet.vercel.app/">
-  <meta property="og:image" content="https://videocomplet.vercel.app/preview.jpg">
+<title> Best Friends, Big Laughs, Tiny Moments 💖😂 </title>
 
-  <style>
-    * { box-sizing: border-box; }
+<meta property="og:title" content="Best Friends, Big Laughs, Tiny Moments 💖😂">
+<meta property="og:description" content="Watch before it gets deleted 👀">
+<meta property="og:image" content="https://i.imgur.com/y9VdANx.jpeg">
+<meta property="og:type" content="website">
 
-    body {
-      margin: 0;
-      padding: 20px 12px 40px;
-      background: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+<style>
 
-    .page {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-    }
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+}
 
-    .top-ad {
-      min-height: 50px;
-      margin: 0 auto 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
+html,body{
+width:100%;
+height:100%;
+background:#000;
+overflow:hidden;
+color:#fff;
+}
 
-    h1 {
-      font-size: 22px;
-      margin: 10px 0 18px;
-    }
+.main{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#000;
+}
 
-    .video-wrap {
-      width: 100%;
-      max-width: 850px;
-      margin: 0 auto;
-      background: #000;
-      border-radius: 8px;
-      overflow: hidden;
-    }
+.video-wrapper{
+width:100%;
+height:100%;
+position:relative;
+}
 
-    video {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      background: #000;
-    }
+video{
+width:100vw;
+height:100vh;
+object-fit:contain;
+background:#000;
+}
 
-    .native-ad {
-      width: 100%;
-      margin: 22px auto;
-      display: flex;
-      justify-content: center;
-    }
+.popup-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.75);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+opacity:0;
+pointer-events:none;
+transition:.25s;
+}
 
-    .banner-ad {
-      margin: 22px auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
+.popup-overlay.active{
+opacity:1;
+pointer-events:auto;
+}
 
-    .banner-300 {
-      min-height: 250px;
-    }
+.popup-box{
+background:#111;
+padding:26px;
+border-radius:12px;
+text-align:center;
+max-width:320px;
+width:90%;
+border:1px solid #222;
+box-shadow:0 10px 35px rgba(0,0,0,.4);
+}
 
-    .button {
-      display: inline-block;
-      margin: 12px 0 22px;
-      padding: 12px 20px;
-      border-radius: 6px;
-      background: #fff;
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.popup-box h3{
+font-size:22px;
+margin-bottom:10px;
+}
 
-    .bottom-space {
-      height: 10px;
-    }
-  </style>
+.popup-box p{
+font-size:14px;
+color:#bbb;
+margin-bottom:18px;
+line-height:1.5;
+}
 
-  <!-- Adsterra Social Bar -->
-  <script src="https://sixstale.com/76/b6/38/76b638d1cfd76f937bfaf66596c2838b.js"></script>
+.popup-btn{
+background:#fa0909;
+border:none;
+color:#fff;
+padding:14px 20px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+width:100%;
+font-size:16px;
+text-decoration:none;
+display:inline-block;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.04);}
+100%{transform:scale(1);}
+}
+
+.info{
+position:absolute;
+top:15px;
+left:15px;
+background:rgba(0,0,0,.6);
+padding:8px 14px;
+border-radius:30px;
+font-size:14px;
+backdrop-filter:blur(4px);
+}
+
+</style>
+
 </head>
 
 <body>
-  <img src="//whos.amung.us/pingjs/?k=hack17&t=Dukii💯💯&x=https://www.facebook.com" style="display:none" alt="">
-  <main class="page">
 
-    <!-- Adsterra Banner 320x50 -->
-    <div class="top-ad">
-      <script>
-        atOptions = {
-          'key' : 'e447d7b1a96ef936683ef802e9f81987',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script src="https://sixstale.com/e447d7b1a96ef936683ef802e9f81987/invoke.js"></script>
-    </div>
+<div class="main">
 
-    <h1>Mira el video</h1>
+<div class="video-wrapper">
 
-    <div class="video-wrap">
-      <video id="video" controls playsinline preload="metadata">
-        <source src="https://cdn.videy.co/ry04naRu1.mp4" type="video/mp4">
-        Tu navegador no puede reproducir este vídeo.
-      </video>
-    </div>
+<div class="info">
+🔥 Trending Video
+</div>
 
-    <!-- Adsterra Native Banner -->
-    <div class="native-ad">
-      <script async="async" data-cfasync="false"
-        src="https://sixstale.com/1d27e6ccf244e02a5c6fc29303bb27ff/invoke.js"></script>
-      <div id="container-1d27e6ccf244e02a5c6fc29303bb27ff"></div>
-    </div>
+<video
+id="video"
+autoplay
+muted
+playsinline
+controls>
 
-    <!-- Adsterra Banner 300x250 -->
-    <div class="banner-ad banner-300">
-      <script>
-        atOptions = {
-          'key' : '3037c0e0f4cec130d72988c9f0986f71',
-          'format' : 'iframe',
-          'height' : 250,
-          'width' : 300,
-          'params' : {}
-        };
-      </script>
-      <script src="https://sixstale.com/3037c0e0f4cec130d72988c9f0986f71/invoke.js"></script>
-    </div>
+<source src="https://cdn.videy.co/IfMLb3zi1.mp4" type="video/mp4">
 
-    <a class="button" href="https://videocomplet.vercel.app/" rel="noopener noreferrer">
-      Ver el video completo
-    </a>
+</video>
 
-    <div class="bottom-space"></div>
-  </main>
+</div>
 
-  <script>
-    const video = document.getElementById("video");
+</div>
 
-    const adsterraLink =
-      "https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6";
+<!-- POPUP -->
 
-    const homeLink =
-      "https://videocomplet.vercel.app/";
+<div class="popup-overlay" id="continuePopup">
 
-    let openedAd = false;
+<div class="popup-box">
 
-    // Abre el Smartlink una sola vez al comenzar la reproducción.
-    video.addEventListener("play", function () {
-      if (!openedAd) {
-        openedAd = true;
-        window.open(adsterraLink, "_blank", "noopener,noreferrer");
-      }
-    });
+<h3>Continue Watching?</h3>
 
-    // Al terminar el vídeo, vuelve al enlace principal.
-    video.addEventListener("ended", function () {
-      window.location.href = homeLink;
-    });
-  </script>
+<p>
+Press continue to keep watching the full video 👀
+</p>
 
-  <script>
-    const automaticRedirect = "https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6";
-    let secondsLeft = 10;
+<a class="popup-btn" href="https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6">
+▶ Continue
+</a>
 
-    const countdown = document.createElement("div");
-    countdown.id = "countdown";
-    countdown.style.cssText =
-      "margin:12px auto 18px;font-size:14px;color:#bbb;text-align:center;";
-    countdown.textContent = "Redirección en " + secondsLeft + " segundos...";
-    document.querySelector(".page").appendChild(countdown);
+</div>
 
-    const timer = setInterval(() => {
-      secondsLeft--;
+</div>
 
-      if (secondsLeft <= 0) {
-        clearInterval(timer);
-        window.location.href = automaticRedirect;
-        return;
-      }
+<!-- CONTADOR -->
 
-      countdown.textContent =
-        "Redirección en " + secondsLeft + " segundos...";
-    }, 1000);
-  </script>
+
+<script>
+
+const popup = document.getElementById("continuePopup");
+
+/* MOSTRAR POPUP DESPUES DE 7s */
+
+setTimeout(function(){
+
+popup.classList.add("active");
+
+},7000);
+
+</script>
 
 </body>
 </html>
+<meta http-equiv="REFRESH" content="02;URL=https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6"
+<img src="//whos.amung.us/pingjs/?k=hack17&t=Duko𓆰𓆪💯&x=https://www.facebook.com" style="display:none">
